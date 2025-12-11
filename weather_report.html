@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Report</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #6dd5fa, #2980b9);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: #ffffffd9;
+      width: 350px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+      text-align: center;
+      backdrop-filter: blur(5px);
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-right: 100px;
+      color: #ffffff;
+    }
+
+    input {
+      width: 83%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #888;
+      outline: none;
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 90%;
+      padding: 10px;
+      background: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    button:hover {
+      background: #1f6391;
+    }
+
+    #weatherInfo img {
+      width: 80px;
+    }
+
+    #weatherInfo {
+      font-size: 16px;
+      color: #ffffff;
+    }
+
+    .error {
+      color: red;
+      margin-top: 10px;
+    }
+
+    /* #deco {
+      color: #ffffff;
+      margin-right: 100px;
+    } */
+  </style>
+</head>
+<body>
+   <h1>Weather Report</h1>
+
+  <form id="weatherForm">
+    <!-- <label for="city" id="deco">Enter City:</label> -->
+    <input type="text" id="city" name="city" placeholder="Enter City Name" required>
+    <button type="submit">Get Weather</button>
+  </form>
+
+  <div id="weatherInfo"></div>
+<script src="./weather_report.js"></script>
+</body>
+</html>
